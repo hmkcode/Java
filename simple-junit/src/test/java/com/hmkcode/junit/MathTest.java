@@ -13,7 +13,7 @@ import static org.hamcrest.CoreMatchers.is;
 
 
 /**
- * Tests for {@link Functions}.
+ * Tests for {@link Math}.
  *
  * @author hmkcode@gmail.com (Hani HMK)
  */
@@ -21,7 +21,7 @@ import static org.hamcrest.CoreMatchers.is;
 public class MathTest {
 
    @Rule
-     public Timeout globalTimeout = new Timeout(3000); // 0 seconds max per method tested
+   public Timeout globalTimeout = new Timeout(3000); // 3 seconds max per method tested
 
   
   com.hmkcode.junit.Math math = new com.hmkcode.junit.Math();
@@ -59,9 +59,5 @@ public class MathTest {
        org.junit.Assert.assertTrue("failure - not equal", math.subtract(3, 2) == 1);
     }
     
-    public static void main(String[] args){
-        org.junit.runner.JUnitCore.runClasses(MathTest.class);
-
-    }
+  
 }
-
