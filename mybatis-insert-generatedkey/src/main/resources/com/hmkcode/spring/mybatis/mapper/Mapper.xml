@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.hmkcode.spring.mybatis.mapper.Mapper">
+	
+	<!-- Mapper.insertchild() -->
+	<insert id="insertMyObject" parameterType="MyObject" timeout="10" useGeneratedKeys="true"  keyProperty="objectId">
+		
+		<selectKey keyProperty="objectId" resultType="int" order="BEFORE">
+        	SELECT nextVal('my_sequence')
+        	<!-- or ->  SELECT my_sequence.nextVal from dual   -->
+        </selectKey>
+		
+		INSERT INTO myobject_table (objectId,objectName)
+			VALUES (#{objectId},#{objectName})
+		
+	</insert>
+</mapper>

@@ -1,0 +1,2 @@
+CREATE TABLE myobject_table (objectId INT PRIMARY KEY, objectName VARCHAR(255));
+CREATE SEQUENCE my_sequence START WITH 1 INCREMENT BY 1;
