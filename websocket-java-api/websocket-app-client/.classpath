@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+  <classpathentry kind="src" path="src/main/java" including="**/*.java"/>
+  <classpathentry kind="src" path="src/main/resources" excluding="**/*.java"/>
+  <classpathentry kind="output" path="target/classes"/>
+  <classpathentry kind="var" path="M2_REPO/javax/activation/activation/1.1/activation-1.1.jar"/>
+  <classpathentry kind="var" path="M2_REPO/javax/websocket/javax.websocket-api/1.0-rc5/javax.websocket-api-1.0-rc5.jar" sourcepath="M2_REPO/javax/websocket/javax.websocket-api/1.0-rc5/javax.websocket-api-1.0-rc5-sources.jar"/>
+  <classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+  <classpathentry kind="var" path="M2_REPO/javax/javaee-api/7.0-b82/javaee-api-7.0-b82.jar"/>
+  <classpathentry kind="var" path="M2_REPO/com/sun/mail/javax.mail/1.5.0-b01/javax.mail-1.5.0-b01.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/glassfish/tyrus/tyrus-client/1.0-rc3/tyrus-client-1.0-rc3.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/glassfish/tyrus/tyrus-core/1.0-rc3/tyrus-core-1.0-rc3.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/glassfish/tyrus/tyrus-spi/1.0-rc3/tyrus-spi-1.0-rc3.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/glassfish/tyrus/tyrus-websocket-core/1.0-rc3/tyrus-websocket-core-1.0-rc3.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/glassfish/tyrus/tyrus-container-grizzly/1.0-rc3/tyrus-container-grizzly-1.0-rc3.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/glassfish/grizzly/grizzly-framework/2.3/grizzly-framework-2.3.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/glassfish/grizzly/grizzly-http-server/2.3/grizzly-http-server-2.3.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/glassfish/grizzly/grizzly-http/2.3/grizzly-http-2.3.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/glassfish/grizzly/grizzly-rcm/2.3/grizzly-rcm-2.3.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/glassfish/tyrus/tyrus-server/1.0-rc3/tyrus-server-1.0-rc3.jar"/>
+</classpath>
