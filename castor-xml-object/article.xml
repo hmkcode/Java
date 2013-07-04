@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article>
+	<categories xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="java:java.lang.String">Java</categories>
+	<tags xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="java:java.lang.String">Java</tags>
+	<tags xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="java:java.lang.String">Castor</tags>
+	<tags xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="java:java.lang.String">XML</tags>
+	<tags xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="java:java.lang.String">Marshalling</tags>
+	<tags xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="java:java.lang.String">Unmarshalling</tags>
+	<url>http://hmkcode.com/castor-java-object-xml</url>
+	<title>Castor - Java Object to XML &amp; XML to Object Mapping</title>
+</article>

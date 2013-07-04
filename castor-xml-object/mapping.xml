@@ -1,0 +1,19 @@
+<?xml version="1.0"?><!DOCTYPE mapping PUBLIC "-//EXOLAB/Castor Mapping DTD Version 1.0//EN"                         
+"http://castor.org/mapping.dtd">
+<mapping>     
+	<class name="com.hmkcode.vo.Article">                 
+		<map-to xml="article" />                 
+		<field name="title" type="string">            
+			<bind-xml name="title" node="attribute"/>        
+		</field>
+		<field name="url" type="string">            
+			<bind-xml name="url" node="element"/>        
+		</field>                  
+		<field name="categories" type="string" collection="arraylist">             
+			<bind-xml name="category" />        
+		</field>             
+		<field name="tags" type="string" collection="arraylist">             
+			<bind-xml name="tag" />        
+		</field>
+	</class>
+</mapping>
