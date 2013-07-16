@@ -1,0 +1,84 @@
+﻿#header{
+	height:95px;
+	min-width:720px;
+	border-bottom:1px #E5E5E5 solid;
+	/*background-color:#F1F1F1; */
+	background:white url('../img/tech-stack.jpg') repeat-x;
+	margin-left:180px;
+	
+}
+#site-title-content{
+	background-color:#333;
+	display:inline-block;
+	float:left;
+	width:180px;
+	height:76px;
+	padding:0px;
+	padding-top:20px;
+
+}
+#site-title-content:hover{
+	background-color:#333;
+
+}
+
+h2.latest-post-title{
+	font-family: 'Didact Gothic', sans-serif;
+}
+
+h3.site-header {
+   	margin:0;
+   	padding:0;
+   text-align:center;
+   
+
+}
+h3.site-header a{
+    color:#fff;
+    text-decoration: none;	
+   
+}
+h3.site-header a:hover {
+	color: rgb(33, 117, 155);
+    text-decoration: none;
+}
+
+h4.site-description{
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 1.84615;
+    color: #ccc;
+    margin:0;
+   	padding:0;
+   	text-align:center;
+    font-family: "Open Sans",Helvetica,Arial,sans-serif;
+}
+.social-button{
+	padding:10px;
+	text-align:right;
+	border-bottom:1px solid rgb(235, 235, 235);
+	background:rgb(242, 242, 242);
+}
+.icon img{
+	width: 32px;
+}
+#icon-bar{
+	height:40px;
+}
+.tech-icons {
+	padding:5px;
+	border-bottom:1px solid rgb(235, 235, 235);
+	text-align:center;
+}
+.tech-icons span{
+	padding:2px;
+	display:inline-block;
+	width:110px;
+	border:1px rgb(235, 235, 235) solid;
+	border-radius:15px;
+}
+.tech-icons span:hover{
+	
+	border:1px rgb(33, 117, 155) solid;
+	cursor:pointer;
+}

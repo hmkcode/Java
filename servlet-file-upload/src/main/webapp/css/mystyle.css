@@ -1,0 +1,31 @@
+﻿#main{
+				
+	border:1px #F2F2F2 solid;
+	padding:10px;
+	margin:5px;
+	min-width:1020px;
+	text-align:center;
+	
+}
+
+#input-div{
+	width:500px;
+	display:inline-block;
+	vertical-align:top;
+		padding:5px;
+		border:1px #F2F2F2 solid;
+
+}
+
+#ref-div{
+	width:500px;
+	display:inline-block;
+
+	vertical-align:top;
+	padding:5px;
+}
+
+#user_twitter{
+				
+ text-align:center;
+}
