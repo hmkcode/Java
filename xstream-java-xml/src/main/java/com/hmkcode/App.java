@@ -26,7 +26,7 @@ public class App
         
         System.out.println("\n--------------------------------\n");
 
-    	// OBJECT --> XML
+    	// XML --> OBJECT
         Article article = (Article) xs.fromXML(xml);
         
         System.out.println("XML --> OBJECT");
