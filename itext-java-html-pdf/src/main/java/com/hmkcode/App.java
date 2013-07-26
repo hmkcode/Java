@@ -3,12 +3,10 @@ package com.hmkcode;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
-
 import com.itextpdf.text.Document;
 import com.itextpdf.text.DocumentException;
 import com.itextpdf.text.pdf.PdfWriter;
 import com.itextpdf.tool.xml.XMLWorkerHelper;
-import com.itextpdf.tool.xml.pipeline.css.CSSResolver;
 
 public class App 
 {
@@ -21,8 +19,6 @@ public class App
         // step 3
         document.open();
         // step 4
-        //CSSResolver cssResolver = XMLWorkerHelper.getInstance().getDefaultCssResolver(true);
-
         XMLWorkerHelper.getInstance().parseXHtml(writer, document,
                 new FileInputStream("index.html"));	
         //step 5

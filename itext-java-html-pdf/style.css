@@ -1,31 +1,21 @@
 h1 {
   color:#ccc;
 }
-
-table tr td,th{
-	width: 100px;
-	height: 50px;
+table tr td{
 	text-align:center;
 	border:1px solid gray;
+	padding:4px;
 }
-
 table tr th{
-	background-color: gray;
+	background-color:#84C7FD;
 	color:#fff;
+	width: 100px;
 }
-
 .itext{
 	color:#84C7FD;
 	font-weight:bold;
 }
-
 .description{
 	color:gray;
 }
-.label{
-	width:70px;
-	height:30px;
-    display:inline-block;
-	background-color:#84C7FD;
-	color:#fff;
-}
+
