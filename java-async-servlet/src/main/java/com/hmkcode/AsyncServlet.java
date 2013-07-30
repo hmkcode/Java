@@ -15,16 +15,25 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet(name="asyncServlet",value = {"/async"},asyncSupported = true)
 public class AsyncServlet extends HttpServlet 
 {
+	public static int index = 0;
+	
+	public AsyncServlet(){
+		System.out.println("AsyncServlet - "+index++);
+	}
    
 private static final long serialVersionUID = 1L;
 
+String param ="";
   @Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp)
 		throws ServletException, IOException {
 	   
+	  
 	   final AsyncContext ctx = req.startAsync();
+	   param = ctx.getRequest().getParameter("seq");
+	  
 	   
-	   ctx.setTimeout(3000);
+	   ctx.setTimeout(0);
 	   
 	   ctx.addListener(new AsyncListener() {
 		
@@ -49,19 +58,25 @@ private static final long serialVersionUID = 1L;
 			}
 	   });
 	   
-	   
 	   ctx.start(new Runnable() {
 			@Override
 			public void run() {
-				// TODO Auto-generated method stub
 				 try {
-					ctx.getResponse().getWriter().write("Async Started...");
+					
+					 
+					  while(!param.equals("exit")){
+						  
+					  }
+					  ctx.getResponse().getWriter().write(ctx.getRequest().getParameter("seq"));
+					  
 				} catch (IOException e) {
 					e.printStackTrace();
 				}
 				 
 			 ctx.complete();
 			}
+			
+			
 	   });
    }
 }
