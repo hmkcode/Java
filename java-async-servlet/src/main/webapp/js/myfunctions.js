@@ -18,6 +18,9 @@ function sendAsync(seq) {
 
 $(document).ready(function(){
 	$("#start").click(function(){
+		
+		$("tr:has(td)").remove();
+		
 		for(i = 1 ; i < 5 ; i++){
 			$("#asyncResponse").append($('<tr/>')
 					.append($('<td/>').text("request -"+i))
