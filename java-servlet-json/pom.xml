@@ -5,7 +5,7 @@
   <groupId>com.hmkcode</groupId>
   <artifactId>java-servlet-json</artifactId>
   <version>1.0-SNAPSHOT</version>
-  <packaging>jar</packaging>
+  <packaging>war</packaging>
 
   <name>java-servlet-json</name>
   <url>http://maven.apache.org</url>
