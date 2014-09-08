@@ -29,7 +29,7 @@ public class JSONServlet extends HttpServlet {
 	    
 		// 1. get received JSON data from request
 		BufferedReader br = new BufferedReader(new InputStreamReader(request.getInputStream()));
-		String json = "";
+		//String json = "";
 		if(br != null){
 			json = br.readLine();
 		}
