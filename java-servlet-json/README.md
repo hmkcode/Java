@@ -1,0 +1,1 @@
+http://hmkcode.com/java-servlet-send-receive-json-using-jquery-ajax/
