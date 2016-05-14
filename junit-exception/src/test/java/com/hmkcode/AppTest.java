@@ -42,7 +42,7 @@ public class AppTest
 
 	 }
 	 
-	 //( 3 ) Test by @Rule & ExpectedException.expect() | ExpectedException.expectMessage()
+	 
 	  @Rule
 	  public ExpectedException thrown = ExpectedException.none();
 
