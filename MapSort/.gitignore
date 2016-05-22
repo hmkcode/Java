@@ -1,0 +1,36 @@
+# Compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+*.project
+*.classpath
+*.iml
+
+
+.settings/*
+.idea/*
+target/* 
+
+# Packages #
+############
+# it's better to unpack these files and commit the raw source
+# git has its own built in compression methods
+ 
+# Logs and databases #
+######################
+*.log
+ 
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+/target/
