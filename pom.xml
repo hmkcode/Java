@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0                               http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.hmkcode</groupId>
+    <version>1.0</version>
+    <artifactId>java</artifactId>
+    <packaging>pom</packaging>
+    <name>Java</name>
+
+    <modules>
+        <module>castor-xml-object</module>
+        <module>gson-json-java</module>
+        <module>itext-create-pdf</module>
+        <module>itext-java-html-pdf</module>
+        <module>itext-java-pdf-table</module>
+        <module>jackson-json-java</module>
+        <module>java-async-servlet</module>
+        <module>java-combinations</module>
+        <module>java-excel-poi</module>
+        <module>java-inputstream-string</module>
+        <module>java-list-map</module>
+        <module>java-servlet-json</module>
+        <module>java-simple-text-file-reader</module>
+        <module>java-unzip</module>
+        <module>junit-exception</module>
+        <module>MapSort</module>
+        <module>mybatis-insert-generatedkey</module>
+        <module>servlet-file-upload</module>
+        <module>simple-junit</module>
+        <module>webservlet-annotation</module>
+        <module>websocket-java-api</module>
+        <module>xstream-java-xml</module>
+    </modules>
+
+    
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <configuration>
+                        <source>1.6</source>
+                        <target>1.6</target>
+                    </configuration>
+                </plugin>
+            </plugins>
+      </pluginManagement>
+    </build>
+    
+</project>
