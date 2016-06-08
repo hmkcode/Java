@@ -11,7 +11,9 @@ import java.util.TreeMap;
 
 import com.hmkcode.vo.Person;
 
-
+/**
+ * Sorts the entries of TreeMap based on Person's value which is age
+ */
 public class MapApp 
 {
 	
