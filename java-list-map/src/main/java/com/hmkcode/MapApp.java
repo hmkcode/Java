@@ -53,7 +53,7 @@ public class MapApp
         }   
                         
         // D. Sort by value
-        TreeMap<String,Person> sorted_map = new TreeMap<String,Person>(new ValueComparator());
+        TreeMap<String,Person> sorted_map = new TreeMap<String,Person>(new ValueComparator(hashMap));
         sorted_map.putAll(hashMap);
                 
         
@@ -85,14 +85,11 @@ public class MapApp
 }
 class ValueComparator implements Comparator {
 	  
-	  Map map;
-	  
-	  public ValueComparator(){
-	  	
+	 Map<String,Person> map;
+	 public ValueComparator(Map<String,Person> map){
+        	this.map = map;
 	  }
 	  public int compare(Object keyA, Object keyB){
-	  		  	
-	  	return ((String) keyA).compareTo((String) keyB);
-	  	
+	  	return map.get((String)keyA).compareTo(map.get((String)keyB));
 	  }
 }
