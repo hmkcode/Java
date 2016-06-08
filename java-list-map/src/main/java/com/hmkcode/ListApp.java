@@ -6,7 +6,9 @@ import java.util.LinkedList;
 import java.util.List;
 
 import com.hmkcode.vo.Person;
-
+/**
+ * Sorts the List of Persons by age
+ */
 public class ListApp 
 {
 
