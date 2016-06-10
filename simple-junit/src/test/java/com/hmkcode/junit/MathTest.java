@@ -25,7 +25,7 @@ public class MathTest {
     private Math math;
 
     @Before
-    public void setup() {
+    public void setUp() {
         math = new Math();
     }
 
@@ -52,7 +52,8 @@ public class MathTest {
 
     @Test
     public void testDivide() {
-        double x = 3, y = 2;
+        double x = 3;
+        double y = 2;
         assertThat("failure - can't divide by 0", y, is(not(0.0)));
         Assert.assertTrue("failure - not equal", math.divide(x, y) == 1.5);
     }
