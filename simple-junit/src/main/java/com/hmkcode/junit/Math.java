@@ -1,26 +1,24 @@
 package com.hmkcode.junit;
 
 /**
- * Hello world!
- *
+ * Class to do basic math calculations
  */
-public class Math 
-{
-    public static void main( String[] args )
-    {
-        System.out.println( "Hello World!" );
-    }
+public class Math {
+
     
-    public double sum(double x, double y){
-      return x+y;
+    public double sum(double x, double y) {
+      return x + y;
     }
-    public double multiply(double x, double y){
-      return x*y;
+
+    public double multiply(double x, double y) {
+      return x * y;
     }
-    public double divide(double x, double y){
-      return x/y;
+
+    public double divide(double x, double y) {
+      return x / y;
     }
-    public double subtract(double x, double y){
+
+    public double subtract(double x, double y) {
       return x - y;
     }
     
