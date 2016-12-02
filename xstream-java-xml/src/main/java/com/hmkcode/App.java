@@ -26,11 +26,7 @@ public class App
         
         System.out.println("\n--------------------------------\n");
         System.out.println("Testing Github 21");
-        System.out.println("Testing Github 22");
-        System.out.println("Testing Github 23");
-        System.out.println("Testing Github 24");
-        System.out.println("Testing Github 25");
-        System.out.println("Testing Github 26");
+       
     	// XML --> OBJECT
         Article article = (Article) xs.fromXML(xml);
         
