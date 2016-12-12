@@ -2,6 +2,7 @@
     <wb-module deploy-name="webservlet-annotation">
         <wb-resource deploy-path="/" source-path="/target/m2e-wtp/web-resources"/>
         <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
         <property name="context-root" value="webservlet-annotation"/>
         <property name="java-output-path" value="/webservlet-annotation/build/classes"/>
     </wb-module>

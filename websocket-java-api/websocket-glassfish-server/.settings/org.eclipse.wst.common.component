@@ -2,6 +2,7 @@
     <wb-module deploy-name="websocket-glassfish-server">
         <wb-resource deploy-path="/" source-path="/target/m2e-wtp/web-resources"/>
         <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
         <property name="context-root" value="websocket-glassfish-server"/>
         <property name="java-output-path" value="/websocket-glassfish-server/build/classes"/>
     </wb-module>
