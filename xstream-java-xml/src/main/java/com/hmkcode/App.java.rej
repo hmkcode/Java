@@ -1,0 +1,11 @@
+diff a/xstream-java-xml/src/main/java/com/hmkcode/App.java b/xstream-java-xml/src/main/java/com/hmkcode/App.java	(rejected hunks)
+@@ -31,6 +31,9 @@
+         System.out.println("Testing Github 24");
+         System.out.println("Testing Github 25");
+         System.out.println("Testing Github 26");
++        System.out.println("Testing Github 27");
++        System.out.println("Testing Github 28");
++        System.out.println("Testing Github 29");
+     	// XML --> OBJECT
+         Article article = (Article) xs.fromXML(xml);
+         

@@ -25,7 +25,8 @@ public class App
         System.out.println(xml);
         
         System.out.println("\n--------------------------------\n");
-
+        System.out.println("Testing Github 21");
+       
     	// XML --> OBJECT
         Article article = (Article) xs.fromXML(xml);
         
