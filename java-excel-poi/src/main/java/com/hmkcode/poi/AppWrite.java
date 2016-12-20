@@ -51,6 +51,7 @@ public class AppWrite
         try {
 			
 			fileOut = new FileOutputStream("workbook.xlsx");
+			System.out.println("I am uploading a sample");
 			wb.write(fileOut);
 			fileOut.close();
 			
