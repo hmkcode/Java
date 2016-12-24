@@ -4,7 +4,8 @@ public class line1testhelloupdated {
 
 	public static void main(String[] args) {
 		System.out.println("this is my zone");
-		System.out.println("This is my zone 1");
-		
+		for (int i = 1; i <= 10; i++) {
+			System.out.println("This is my zone 2");
+		}
 	}
 }
