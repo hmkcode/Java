@@ -6,6 +6,8 @@ public class testclass1 {
 		
        int a=10;
        System.out.println("Printing"+a);
+       int b=20;
+       System.out.println("merge"+b);
 	}
 
 }
