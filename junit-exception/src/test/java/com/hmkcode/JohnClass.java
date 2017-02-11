@@ -9,10 +9,12 @@ public class JohnClass {
 
 		int a=30;
 		System.out.println("This is my class"+a);
+
 		
 		int b=30;
 		int c=a+b;
 		System.out.println("this is mine"+c);
+
 
 	}
 
