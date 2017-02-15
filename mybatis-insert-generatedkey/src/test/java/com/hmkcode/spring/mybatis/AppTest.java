@@ -41,8 +41,7 @@ public class AppTest {
 		
 		assertTrue("failure - expected 1 object", objects.size() == 1);
 
-		
-		
+		System.out.println("This is sparta");
 		
 		
 	}
