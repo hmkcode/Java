@@ -10,7 +10,7 @@
     width: 600px;
     height: 200px;
     line-height: 200px;
-    font-size: larger;
+    font-size: small;
 }
 #dropzone.hover {
     background: lawngreen;
