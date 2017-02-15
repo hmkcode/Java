@@ -44,6 +44,9 @@ public class AppTest {
 		log.info(objects);
 	
 		log.info(objects);
+		log.info(objects);
+		
+		
 		
 	}
 }
