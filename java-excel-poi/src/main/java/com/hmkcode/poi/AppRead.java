@@ -51,6 +51,8 @@ public class AppRead
     	cell = sheet.getRow(0).getCell(3);
     	boolean booleanVal = cell.getBooleanCellValue();
     	System.out.println("Row: 0 - Column: 3 = "+booleanVal);
+    	
+    	System.out.println("Hello");
     	//-----------------------------
     	
     }
