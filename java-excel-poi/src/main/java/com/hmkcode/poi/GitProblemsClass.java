@@ -7,6 +7,7 @@ public class GitProblemsClass {
 
 		System.out.println("This is my git problems class");
 		System.out.println("kjkj");
+		System.out.println("jkjk");
 	}
 
 }
