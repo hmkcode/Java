@@ -62,6 +62,8 @@ public class AppWrite
 		}
         
         System.out.println( "File created!" );
+        System.out.println( "File created!" );
+        System.out.println( "File created!" );
 
     }
     
