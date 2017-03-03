@@ -15,6 +15,7 @@ public class AppTest2 {
 	public static void Main(String[] args)
 	{
 		System.out.println("gg");
+		SYstem.out
 		
 	}
 }
