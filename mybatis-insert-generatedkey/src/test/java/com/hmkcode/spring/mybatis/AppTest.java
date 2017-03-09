@@ -41,6 +41,8 @@ public class AppTest {
 		
 		assertTrue("failure - expected 1 object", objects.size() == 1);
 
-		log.info(objects);
+		System.out.println("hellojkjkjk");
+		
+		
 	}
 }

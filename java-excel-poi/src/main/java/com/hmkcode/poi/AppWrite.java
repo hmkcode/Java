@@ -51,6 +51,7 @@ public class AppWrite
         try {
 			
 			fileOut = new FileOutputStream("workbook.xlsx");
+			System.out.println("I am uploading a sample");
 			wb.write(fileOut);
 			fileOut.close();
 			
@@ -60,6 +61,8 @@ public class AppWrite
 			e.printStackTrace();
 		}
         
+        System.out.println( "File created!" );
+        System.out.println( "File created!" );
         System.out.println( "File created!" );
 
     }
