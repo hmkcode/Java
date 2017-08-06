@@ -38,7 +38,7 @@ public class MultipartRequestHandler {
 				// 3.2 Create a new FileMeta object
 				temp = new FileMeta();
 				temp.setFileName(getFilename(part));
-				temp.setFileSize(part.getSize()/1024 +" Kb");
+				temp.setFileSize(humanReadableByteCount(part.getSize(), true));
 				temp.setFileType(part.getContentType());
 				temp.setContent(part.getInputStream());
 				temp.setTwitter(twitter);
@@ -91,7 +91,7 @@ public class MultipartRequestHandler {
 						temp.setFileName(item.getName());
 						temp.setContent(item.getInputStream());
 						temp.setFileType(item.getContentType());
-						temp.setFileSize(item.getSize()/1024+ "Kb");
+						temp.setFileSize(humanReadableByteCount(item.getSize(), true));
 						
 				    	// 2.7 Add created FileMeta object to List<FileMeta> files
 						files.add(temp);
@@ -110,7 +110,16 @@ public class MultipartRequestHandler {
 		}
 		return files;
 	}
-
+	
+	// convert byte size into human readable format
+	//
+	public static String humanReadableByteCount(long bytes, boolean si) {
+	    int unit = si ? 1000 : 1024;
+	    if (bytes < unit) return bytes + " B";
+	    int exp = (int) (Math.log(bytes) / Math.log(unit));
+	    String pre = (si ? "kMGTPE" : "KMGTPE").charAt(exp-1) + (si ? "" : "i");
+	    return String.format("%.1f %sB", bytes / Math.pow(unit, exp), pre);
+	}	
 	
 	// this method is used to get file name out of request headers
 	// 
