@@ -6,7 +6,7 @@ public class Combination {
 
 	
 	public static void main(String[] args){
-		Object[] elements = new Object[] {'A','B','C','D','E', 'F', 'G', 'H'};
+		Object[] elements = new Object[] {'A','B','C','D','E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'};
 
 		combination(elements,7);
 	}
@@ -24,7 +24,7 @@ public class Combination {
 		}
 		// calculate the possible combinations
 		// e.g. c(4,2)
-		c(N,K);
+		bigC(N,K);
 		
 		// get the combination by index 
 		// e.g. 01 --> AB , 23 --> CD
@@ -82,6 +82,18 @@ public class Combination {
 		return ncr;
 	}
 	
+	public static BigInteger bigC(int n, int r){
+		BigInteger nf=bigFact(n);
+		BigInteger rf=bigFact(r);
+		BigInteger nrf=bigFact(n-r);
+		BigInteger npr=nf.divide(nrf);
+		BigInteger ncr=npr.divide(rf); 
+		
+		System.out.println("C("+n+","+r+") = "+ ncr);
+
+		return ncr;
+	}
+	
 	public static int fact(int n)
 	{
 		if(n == 0)
@@ -90,6 +102,13 @@ public class Combination {
 			return n * fact(n-1);
 	}
 	
+	public static BigInteger bigFact(int n) {
+		if(n== 0) 
+			return BigInteger.valueOf(1);
+		else
+			return BigInteger.valueOf(n).multiply(bigFact(n-1));
+		
+	}
 
 	public static void print(int[] combination, Object[] elements){
 
