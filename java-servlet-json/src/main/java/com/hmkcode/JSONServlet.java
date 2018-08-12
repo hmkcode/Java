@@ -38,18 +38,18 @@ public class JSONServlet extends HttpServlet {
 		}
 		
 		// 2. initiate jackson mapper
-    	ObjectMapper mapper = new ObjectMapper();
+		ObjectMapper mapper = new ObjectMapper();
     	
-    	// 3. Convert received JSON to Article
-    	Article article = mapper.readValue(json, Article.class);
+		// 3. Convert received JSON to Article
+		Article article = mapper.readValue(json, Article.class);
 
 		// 4. Set response type to JSON
 		response.setContentType("application/json");		    
     	
-    	// 5. Add article to List<Article>
+		// 5. Add article to List<Article>
 		articles.add(article);
 
 		// 6. Send List<Article> as JSON to client
-    	mapper.writeValue(response.getOutputStream(), articles);
+		mapper.writeValue(response.getOutputStream(), articles);
 	}
 }
