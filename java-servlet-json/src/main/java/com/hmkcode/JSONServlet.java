@@ -6,6 +6,7 @@ import java.io.InputStreamReader;
 import java.util.LinkedList;
 import java.util.List;
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -13,6 +14,7 @@ import javax.servlet.http.HttpServletResponse;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.hmkcode.vo.Article;
 
+@WebServlet("/jsonservlet")
 public class JSONServlet extends HttpServlet {
 	
 	private static final long serialVersionUID = 1L;
@@ -32,6 +34,7 @@ public class JSONServlet extends HttpServlet {
 		String json = "";
 		if(br != null){
 			json = br.readLine();
+			System.out.println(json);
 		}
 		
 		// 2. initiate jackson mapper
