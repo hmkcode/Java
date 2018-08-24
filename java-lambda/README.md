@@ -1,4 +1,4 @@
-Using Lambda to Implement Funtional Interface Method
+Using Lambda to Implement Functional Interface Method
 ====================================================
 
 - We have a *virtual* `Button` that when clicked will call an abstract method **onClick()** of a listener interface `OnClickListener`.
