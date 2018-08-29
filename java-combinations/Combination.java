@@ -1,4 +1,4 @@
-package com.hmkcode.baloot;
+package com.hmkcode;
 
 
 
@@ -6,9 +6,8 @@ public class Combination {
 
 	
 	public static void main(String[] args){
-		Object[] elements = new Object[] {'A','B','C','D','E', 'F', 'G', 'H'};
-
-		combination(elements,7);
+		Object[] elements = new Object[] {'A','B','C','D','E'};
+		combination(elements,3);
 	}
 	
 	
@@ -22,55 +21,49 @@ public class Combination {
 			System.out.println("Invalid input, K > N");
 			return;
 		}
+		
 		// calculate the possible combinations
-		// e.g. c(4,2)
 		c(N,K);
 		
-		// get the combination by index 
-		// e.g. 01 --> AB , 23 --> CD
+		// init combination index array
 		int combination[] = new int[K];
 		
-		// position of current index
-		//  if (r = 1)				r*
-		//	index ==>		0	|	1	|	2
-		//	element ==>		A	|	B	|	C
-		int r = 0;		
-		int index = 0;
+
+		int r = 0; // index for combination array
+		int i = 0; // index for elements array
 		
 		while(r >= 0){
-			// possible indexes for 1st position "r=0" are "0,1,2" --> "A,B,C"
-			// possible indexes for 2nd position "r=1" are "1,2,3" --> "B,C,D"
-			
-			// for r = 0 ==> index < (4+ (0 - 2)) = 2
-			if(index <= (N + (r - K))){
-					combination[r] = index;
+		
+			// forward step if i < (N + (r-K))
+			if(i <= (N + (r - K))){
+					combination[r] = i;
 					
-				// if we are at the last position print and increase the index
+				// if combination array is full print and increment i;
 				if(r == K-1){
-
-					//do something with the combination e.g. add to list or print
 					print(combination, elements);
-					index++;				
+					i++;				
 				}
 				else{
-					// select index for next position
-					index = combination[r]+1;
+					// if combination is not full yet, select next element
+					i = combination[r]+1;
 					r++;										
 				}
+				
 			}
+			
+			// backward step
 			else{
 				r--;
-				if(r > 0)
-					index = combination[r]+1;
-				else
-					index = combination[0]+1;	
+				if(r >= 0)
+					i = combination[r]+1;
+				
 			}			
 		}
 	}
 	
 
 	
-	public static int c(int n, int r){
+	private static int c(int n, int r){
 		int nf=fact(n);
 		int rf=fact(r);
 		int nrf=fact(n-r);
@@ -82,7 +75,7 @@ public class Combination {
 		return ncr;
 	}
 	
-	public static int fact(int n)
+	private static int fact(int n)
 	{
 		if(n == 0)
 			return 1;
@@ -91,7 +84,7 @@ public class Combination {
 	}
 	
 
-	public static void print(int[] combination, Object[] elements){
+	private static void print(int[] combination, Object[] elements){
 
 		String output = "";
 		for(int z = 0 ; z < combination.length;z++){
