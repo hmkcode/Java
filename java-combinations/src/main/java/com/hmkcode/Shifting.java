@@ -5,45 +5,43 @@ public class Shifting
     public static void main( String[] args )
     {
     	String[] e = {"A","B","C","D","E"};	
-    	int K = 3;
+    	int k = 3;
+    	combination(e,k);
     }
-	public static void combination(Object[]  e, int K){
+	public static void combination(Object[]  e, int k){
 	
-		int[] ignore = new int[e.length-K]; // --> [0][0]
-    	int[] combination = new int[K]; // --> [][][]
+		int[] ignore = new int[e.length-k]; // --> [0][0]
+    	int[] combination = new int[k]; // --> [][][]
     	
-    	for(int w = 0; w < ignore.length; w++){ // --> [3][4]
-    		ignore[w] = e.length - K +(w+1);
-    		//System.out.println(ignore[w]);
-    	}
+    	// set initial ignored elements 
+    	//(last k elements will be ignored)
+    	for(int w = 0; w < ignore.length; w++)
+    		ignore[w] = e.length - k +(w+1);
     	
-    	int i = 0;
-    	int r = 0;
-    	int g = 0;
+    	int i = 0, r = 0, g = 0;
+    	
     	boolean terminate = false;
-    	while(!terminate){    		
-	    	while(i < e.length && r < K){
+    	while(!terminate){   
+    		
+    		// selecting N-k non-ignored elements
+	    	while(i < e.length && r < k){
 	    			
 	    		if(i != ignore[g]){
 	    			combination[r] = i;
-	    			System.out.print(e[combination[r]]+" ");
-	    			r++;
-	    			i++;
+	    			r++; i++;
 	    		}
-	    		else{
-	    			g++;
-	    			
-	    			if(g == ignore.length)
-	    				g--;
-	    			
+	    		else{	    			
+	    			if(g != ignore.length-1)
+	    				g++;	    			
 	    			i++;
 	    		}
 	    	}
-	    	i = 0; r=0; g =0;
-			System.out.println("");
+	    	print(combination, e);
+	    	i = 0; r = 0; g = 0;
 
 	    	terminate = true;
 	    	
+	    	// shifting ignored indices
 	    	for(int w = 0 ; w < ignore.length; w++){
 	    		if(ignore[w] > w){	    			
 	    			ignore[w]--;
@@ -55,5 +53,14 @@ public class Shifting
 	    		}
 	    	}
     	}    		
+	}
+	
+	private static void print(int[] combination, Object[] elements){
+
+		String output = "";
+		for(int z = 0 ; z < combination.length;z++){
+			output += elements[combination[z]];
+		}
+		System.out.println(output);
 	}
 }

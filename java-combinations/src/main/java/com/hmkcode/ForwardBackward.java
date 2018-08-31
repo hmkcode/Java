@@ -6,27 +6,28 @@ public class ForwardBackward {
 
 	
 	public static void main(String[] args){
-		Object[] elements = new Object[] {'A','B','C','D','E'};
-		combination(elements,3);
+		Object[] e = new Object[] {'A','B','C','D','E'};
+		int k = 3;
+		combination(e,k);
 	}
 	
 	
-	public static void combination(Object[]  elements, int K){
+	public static void combination(Object[]  elements, int k){
 
 		// get the length of the array
 		// e.g. for {'A','B','C','D'} => N = 4 
 		int N = elements.length;
 		
-		if(K > N){
+		if(k > N){
 			System.out.println("Invalid input, K > N");
 			return;
 		}
 		
 		// calculate the possible combinations
-		c(N,K);
+		c(N,k);
 		
 		// init combination index array
-		int pointers[] = new int[K];
+		int pointers[] = new int[k];
 		
 
 		int r = 0; // index for combination array
@@ -35,11 +36,11 @@ public class ForwardBackward {
 		while(r >= 0){
 		
 			// forward step if i < (N + (r-K))
-			if(i <= (N + (r - K))){
+			if(i <= (N + (r - k))){
 				pointers[r] = i;
 					
 				// if combination array is full print and increment i;
-				if(r == K-1){
+				if(r == k-1){
 					print(pointers, elements);
 					i++;				
 				}

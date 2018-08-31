@@ -7,27 +7,34 @@ public class Recursive {
 
 	public static void main(String[] args) {
 		
-		List<String> e = Arrays.asList("A", "B", "C", "D", "E");		
-		combination(e, 3, "");
+		List<String> e = Arrays.asList("A", "B", "C", "D", "E");
+		int k = 3;
+		combination(e, k, "");
 		
 	}
 	static int counter = 0;
-	public static void combination(List<String> e, int K, String c){
+	public static void combination(List<String> e, int k, String accumulated){
 	
-		if(e.size() < K)
+		// 1. stop
+		if(e.size() < k)
 			return;
-				
-		if(K == 1)
+		
+		// 2. add each element in e to accumulated
+		if(k == 1)
 			for(String s:e)
-				print(c+s);
-		else if(e.size() == K){
+				print(accumulated+s);
+		
+		// 3. add all elements in e to accumulated
+		else if(e.size() == k){
 			for(String s:e)
-				c+=s;
-			print(c);
+				accumulated+=s;
+			print(accumulated);
 		}
-		else if(e.size() > K)
+		
+		// 4. for each element, call combination
+		else if(e.size() > k)
 			for(int i = 0 ; i < e.size() ; i++)
-				combination(e.subList(i+1, e.size()), K-1, c+e.get(i));
+				combination(e.subList(i+1, e.size()), k-1, accumulated+e.get(i));
 		
 	}
 		
