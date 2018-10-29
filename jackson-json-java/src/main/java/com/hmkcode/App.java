@@ -66,7 +66,8 @@ public class App
 			String field = "";
 			while(fields.hasNext()){
 				field = fields.next();
-				System.out.println("field: "+field);
+					System.out.print(" This is " );
+				System.out.println("field: " + field);
 			}
 			System.out.println("---------------------------------------------------------");
 
