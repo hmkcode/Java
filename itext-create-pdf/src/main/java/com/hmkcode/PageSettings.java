@@ -15,7 +15,8 @@ public class PageSettings
 {
     public static void main( String[] args )
     {
-        try {
+        try
+	    {
         	
         	// 1. create the document page size: A4, margins: left:20 right:20 top:40 bottom:40
         	Document document = new Document(PageSize.A4, 20f,20f,40f,40);
@@ -38,6 +39,6 @@ public class PageSettings
 			e.printStackTrace();
 		} catch (DocumentException e) {
 			e.printStackTrace();
-		}      
+	}      
     }
 }
