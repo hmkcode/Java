@@ -3,6 +3,17 @@
   <classpathentry kind="src" path="src/main/java" including="**/*.java"/>
   <classpathentry kind="output" path="target/classes"/>
   <classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-  <classpathentry kind="var" path="M2_REPO/com/itextpdf/itextpdf/5.4.2/itextpdf-5.4.2.jar"/>
-  <classpathentry kind="var" path="M2_REPO/com/itextpdf/tool/xmlworker/5.4.1/xmlworker-5.4.1.jar"/>
+  <classpathentry kind="var" path="M2_REPO/com/itextpdf/barcodes/7.1.9/barcodes-7.1.9.jar"/>
+  <classpathentry kind="var" path="M2_REPO/com/itextpdf/kernel/7.1.9/kernel-7.1.9.jar"/>
+  <classpathentry kind="var" path="M2_REPO/com/itextpdf/io/7.1.9/io-7.1.9.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/slf4j/slf4j-api/1.7.13/slf4j-api-1.7.13.jar"/>
+  <classpathentry kind="var" path="M2_REPO/com/itextpdf/font-asian/7.1.9/font-asian-7.1.9.jar"/>
+  <classpathentry kind="var" path="M2_REPO/com/itextpdf/forms/7.1.9/forms-7.1.9.jar"/>
+  <classpathentry kind="var" path="M2_REPO/com/itextpdf/layout/7.1.9/layout-7.1.9.jar"/>
+  <classpathentry kind="var" path="M2_REPO/com/itextpdf/hyph/7.1.9/hyph-7.1.9.jar"/>
+  <classpathentry kind="var" path="M2_REPO/com/itextpdf/pdfa/7.1.9/pdfa-7.1.9.jar"/>
+  <classpathentry kind="var" path="M2_REPO/com/itextpdf/sign/7.1.9/sign-7.1.9.jar"/>
+  <classpathentry kind="var" path="M2_REPO/com/itextpdf/styled-xml-parser/7.1.9/styled-xml-parser-7.1.9.jar"/>
+  <classpathentry kind="var" path="M2_REPO/com/itextpdf/svg/7.1.9/svg-7.1.9.jar"/>
+  <classpathentry kind="var" path="M2_REPO/com/itextpdf/html2pdf/2.1.6/html2pdf-2.1.6.jar"/>
 </classpath>
