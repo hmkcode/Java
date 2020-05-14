@@ -6,3 +6,5 @@ Refer to the [http://hmkcode.github.io/calculate-find-all-possible-combinations-
 Given an array of size N e.g. `e={'A','B','C','D','E'}` **N=5**, we want to find all possible combinations of K elements in that array. For example, if K=3 then one possible combination is of array **e** is `{'A','B','C'}. Here we have three different algorithms for finding *k*-combinations of an array. 
 
 ![combinations](http://hmkcode.github.io/images/java/combinations_forwardbackward.png)
+
+this file is on github
