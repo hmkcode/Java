@@ -6,7 +6,7 @@ import java.io.InputStream;
 
 public class App 
 {
-    public static void main( String[] args ) throws IOException
+    public static void main( String... args ) throws IOException
     {
     	
         // 1. By java.util.Scanner
