@@ -7,8 +7,9 @@ import java.util.Map;
 public class Test {
 public static void main(String[] args){
   	
-  	
-  	Map map = new HashMap();
+  	/* Creating HashMap with Generic concept in mind is always advisable to improve the readability of the code 
+    and it also avoids if someone accidently add any other type of element into HashMap like Integer, Integer type :) */
+  	Map<String, Integer> map = new HashMap<String, Integer>();
   
   	//*value Class should implements the Comparable interface
   	//*String implements Comparable by default.
