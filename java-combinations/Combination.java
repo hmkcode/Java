@@ -1,6 +1,5 @@
+//A simple Java combinations program
 package com.hmkcode;
-
-
 
 public class Combination {
 
@@ -93,3 +92,4 @@ public class Combination {
 		System.out.println(output);
 	}
 }
+//The process gets finished up here
