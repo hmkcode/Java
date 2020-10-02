@@ -133,7 +133,7 @@ public class App
         Button myButton = new Button();
         myButton.setName("MyButton");
 
-        // 3. lambda
+        // 3. lambda Function
     	OnClickListener lambda = button -> { System.out.println(button.getName()+" Clicked! - lambda"); } ;
     	myButton.setOnClickListener(lambda);
 		
