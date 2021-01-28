@@ -8,6 +8,7 @@ public class Math
 {
     public static void main( String[] args )
     {
+        int test;
         System.out.println( "Hello World!" );
     }
     
