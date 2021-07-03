@@ -1,6 +1,6 @@
 package com.hmkcode;
 
-import java.lang.reflect.Type;
+import java.lang.*;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -39,7 +39,8 @@ public class App
 
 
     }
-    private static Article createArticle(){
+    private static Article createArticle()
+    {
     	
     	Article article = new Article();
     	
