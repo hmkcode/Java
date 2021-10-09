@@ -25,7 +25,7 @@ public class AppMapping
     	try {
         	//Load Mapping
         	Mapping mapping = new Mapping();
-			mapping.loadMapping("mapping.xml");
+			mapping.loadMapping("Mapping.xml");
 			XMLContext context = new XMLContext();
 	    	context.addMapping(mapping);
 	    	
