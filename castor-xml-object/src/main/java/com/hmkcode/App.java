@@ -20,7 +20,7 @@ public class App
     	try {
 			
 	    	//( 1 ) OBJECT --> XML
-    		FileWriter writer = new FileWriter("article.xml");
+    		FileWriter writer = new FileWriter("Article.xml");
 			Marshaller.marshal(createArticle(), writer);
 			writer.close();
 			
