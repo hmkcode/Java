@@ -1,29 +1,28 @@
-package com.hmkcode.junit;
+import org.junit.*;
+import org.junit.runner.RunWith;
+import org.junit.runners.Parameterized;
+import org.junit.runners.Parameterized.Parameters;
+import static org.junit.Assert.*;
+import java.util.*;
 
-/**
- * Hello world!
- *
- */
-public class Math 
-{
-    public static void main( String[] args )
-    {
-        System.out.println( "Hello World!" );
+@RunWith(Parameterized.class)
+public class MathTest {
+    public double a, b, sum;
+
+    public MathTest(double a, double b, double sum) {
+        //Note Constructor
+        this.a = a;
+        this.b = b;
+        this.sum = sum;
     }
-    
-    public double sum(double x, double y){
-      return x+y;
+
+    @Parameters
+    public static Collection<Object[]>calcValues() {
+        return Arrays.asList(new Object [][] {{1.5, 1.5, 3}, {2.5, 3.5, 6}});
     }
-    public double multiply(double x, double y){
-      return x*y;
+
+    @Test
+    public void sumTest() {
+        assertTrue("Sum Test", sum == Math.sum(a, b));
     }
-    public double divide(double x, double y){
-      return x/y;
-    }
-    public double subtract(double x, double y){
-      return x - y;
-    }
-    
-    
-    
 }
