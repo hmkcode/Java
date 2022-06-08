@@ -1,0 +1,20 @@
+import org.junit.*;
+import org.junit.Test;
+
+public class MathTest {
+    @Test
+    public void SumTest1() {
+        Assert.assertEquals("", 3, Math.sum(1, 2), 0.0);
+    }
+    // Paritition test for true input domain
+    @Test
+    public void SumTest2() {
+        Assert.assertEquals("Sum Test", 4, Math.sum(1, 2), 0.0);
+    }
+    // Paritition test for false input domain
+    @Test
+    public void SumTest3() {
+        Assert.assertEquals("Sum Test", -0.000000001, Math.sum(-1.000000001, 1.00000000), 0.0);
+    }
+    // Paritition test for invalid input domain
+}
