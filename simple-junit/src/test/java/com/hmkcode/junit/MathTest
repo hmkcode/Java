@@ -1,0 +1,25 @@
+import org.junit.*;
+import org.junit.Test;
+
+public class MathTest {
+    @Test
+    public void testPositiveInputs() {
+        Assert.assertEquals("Test Positive Input", 3, Math.sum(1, 2), 0.0);
+    }
+    // Partition test for positive inputs
+    @Test
+    public void testNegativeInputs() {
+        Assert.assertEquals("Test Negative Input", -4, Math.sum(-2, -2), 0.0);
+    }
+    // Partition test for negative inputs
+    @Test
+    public void testSmallInputs() {
+        Assert.assertEquals("Test Small Input", -0.001, Math.sum(-1.001, 1.000), 0.1);
+    }
+    // Partition test for small inputs
+    @Test
+    public void testBigInputs() {
+        Assert.assertEquals("Test Big Input", 1999999.98, Math.sum(999999.99, 999999.99), 0.0);
+    }
+    // Partition test for big inputs
+}
