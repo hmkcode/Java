@@ -1,3 +1,4 @@
+//kanka bu bir editleme ve pull request örneğidir
 package com.hmkcode;
 
 import java.util.Arrays;
