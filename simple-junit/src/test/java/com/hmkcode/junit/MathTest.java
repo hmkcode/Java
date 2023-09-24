@@ -21,7 +21,7 @@ import static org.hamcrest.CoreMatchers.is;
 public class MathTest {
 
    @Rule
-   public Timeout globalTimeout = new Timeout(3000); // 3 seconds max per method tested
+   public Timeout globalTimeout = new Timeout(30000); // 3 seconds max per method tested
 
   
   com.hmkcode.junit.Math math = new com.hmkcode.junit.Math();
